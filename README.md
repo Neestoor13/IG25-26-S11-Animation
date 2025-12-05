@@ -10,7 +10,7 @@
   - [Escena](#escena)
   - [Ambiente](#ambiente)
   - [Físicas y Tween](#físicas-y-tween)
-- [Enlace al código](enlace-al-código)
+- [Enlace al código](#enlace-al-código)
 - [Referencias](#referencias)
 
 ## Disclaimer
