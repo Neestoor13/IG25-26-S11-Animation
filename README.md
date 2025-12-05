@@ -193,7 +193,7 @@ function createBoxCluster({
 
 De primeras, observamos que la escena tiene una iluminación de ambiente de color verde: esto es totalmente intencional. Como hemos dicho anteriormente, durante la Hora Oscura la luna adopta un color verde que afecta directamente al ambiente, tal y como se puede ver en esta captura.
 
-![Hora Oscura en Persona 3 Reload](images/p3_dark_hour.jpg)
+![Hora Oscura en Persona 3 Reload](images/p3r_dark_hour.jpg)
 
 Para ello, hemos modificado la variable global ambientLight para que tome este color verde tan característico.
 
