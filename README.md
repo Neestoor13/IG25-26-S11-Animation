@@ -10,6 +10,7 @@
   - [Escena](#escena)
   - [Ambiente](#ambiente)
   - [Físicas y Tween](#físicas-y-tween)
+- [Enlace al código](enlace-al-código)
 - [Referencias](#referencias)
 
 ## Disclaimer
@@ -227,6 +228,9 @@ Con el fin de poder animar la escena, se ha hecho uso de las librerías tween.js
 
     ![Movimiento del personaje por la escena](images/player_movement.gif)
 
+## Enlace al código
+
+En el siguiente enlace puede acceder al código contenido en el repositorio de codesandbox: https://codesandbox.io/p/sandbox/dark-surf-jt58z7
 
 ## Referencias
 
