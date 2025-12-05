@@ -30,7 +30,7 @@ let characters = [];
 
 // Creación del Listener
 let listener = new THREE.AudioListener();
-let sound1, sound2;
+let sound1, sound2, sound3;
 
 // Inicialización Ammo
 Ammo(Ammo).then(start);
@@ -58,6 +58,7 @@ function initGraphics() {
   // Inicializamos el sonido
   sound1 = new THREE.Audio(listener);
   sound2 = new THREE.Audio(listener);
+  sound3 = new THREE.Audio(listener);
 
   const audioLoader = new THREE.AudioLoader();
 
@@ -73,6 +74,14 @@ function initGraphics() {
     sound2.setBuffer(buffer);
     sound2.setLoop(false);
     sound2.setVolume(1.0);
+  });
+
+  // Música de ambiente
+  audioLoader.load("audio/fearful_experience.mp3", function (buffer) {
+    sound3.setBuffer(buffer);
+    sound3.setLoop(false);
+    sound3.setVolume(0.5);
+    sound3.play();
   });
 
   scene = new THREE.Scene();
@@ -1017,6 +1026,8 @@ function finishAnimation() {
       // Retrocedemos la cámara lentamente
       const startPos = camera.position.clone();
       const endPos = startPos.clone().add(new THREE.Vector3(-11, 0, 0));
+
+      sound3.stop();
 
       animateCryPose(characters[2]);
 
